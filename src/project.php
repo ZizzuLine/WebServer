@@ -67,7 +67,7 @@
                     </button>
                     <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                         <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                            <a href="index.php" class="nav-item nav-link">Home</a>
+                            <a href="../index.php" class="nav-item nav-link">Home</a>
                             <a href="about.php" class="nav-item nav-link">About</a>
                             <a href="service.php" class="nav-item nav-link">Services</a>
                             <a href="project.php" class="nav-item nav-link active">Projects</a>
@@ -248,7 +248,7 @@
         <!-- Project End -->
 
 
-        <?php include'src/footer.php'  ?>
+        <?php include'footer.php'  ?>
 
 
 

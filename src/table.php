@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Tabella autobus</title>
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
   <link href="../css/tablestyle.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -17,6 +22,9 @@
 
 
     if ($result->num_rows > 0) {
+
+      // Stampa la navbar
+
       echo "<div class='wrapper'>";
       
       // Row Title (stampa una sola volta fuori dal ciclo while)
