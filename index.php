@@ -142,18 +142,19 @@
                 <div class="row g-5">
                     <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
                         <div class="h-100 position-relative">
-                            <img src="img/about-1.jpg" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
+                            <img src="img/t1.jpg" class="img-fluid w-75 rounded" alt="" style="margin-bottom: 25%;">
                             <div class="position-absolute w-75" style="top: 25%; left: 25%;">
-                                <img src="img/about-2.jpg" class="img-fluid w-100 rounded" alt="">
+                                <img src="img/t2.jpg" class="img-fluid w-100 rounded" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                        <h5 class="text-primary">About Us</h5>
-                        <h1 class="mb-4">About HighTech Agency And It's Innovative IT Solutions</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus. Etiam gravida justo nec erat vestibulum, et malesuada augue laoreet.</p>
-                        <p class="mb-4">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p>
-                        <a href="" class="btn btn-secondary rounded-pill px-5 py-3 text-white">More Details</a>
+                        <h5 class="text-primary">ZizzuLine</h5>
+                        <h1 class="mb-4">Ottimizzazione dei Trasporti Pubblici</h1>
+                        <p>Nel costante sforzo di migliorare l'efficienza dei trasporti pubblici, l'introduzione del sistema di monitoraggio degli autobus attraverso RFID ha rivoluzionato il modo in cui gli utenti interagiscono con questo servizio essenziale. Grazie a questa innovativa tecnologia, ora è possibile accedere a informazioni in tempo reale sull'arrivo degli autobus alle fermate, rendendo i viaggi più prevedibili e comodi per tutti.
+                           Il sistema sfrutta l'RFID, una tecnologia di identificazione a radiofrequenza, per tracciare e monitorare gli autobus lungo il loro percorso. Gli autobus sono equipaggiati con dispositivi RFID che comunicano con i tag RFID installati alle fermate. Questa comunicazione permette di determinare con precisione la posizione degli autobus e di fornire agli utenti informazioni aggiornate sull'orario di arrivo stimato.
+                           Con l'aiuto di apposite applicazioni per smartphone o pannelli informativi installati alle fermate, gli utenti possono consultare facilmente l'orario previsto di arrivo degli autobus. Questo elimina l'incertezza e l'attesa prolungata alle fermate, consentendo agli utenti di pianificare i propri spostamenti in modo più efficiente e di ridurre i disagi legati ai ritardi.</p>
+                        <a href="" class="btn btn-secondary rounded-pill px-5 py-3 text-white">Più dettagli</a>
                     </div>
                 </div>
             </div>
@@ -161,109 +162,25 @@
         <!-- About End -->
 
 
-        <!-- Services Start -->
-        <div class="container-fluid services py-5 mb-5">
-            <div class="container">
-                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Our Services</h5>
-                    <h1>Services Built Specifically For Your Business</h1>
-                </div>
-                <div class="row g-5 services-inner">
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fa fa-code fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Web Design</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fa fa-file-code fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Web Development</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fa fa-external-link-alt fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">UI/UX Design</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fas fa-user-secret fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Web Cecurity</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fa fa-envelope-open fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Digital Marketing</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fas fa-laptop fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Programming</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Services End -->
+        <!--
 
 
-        <!-- Project Start -->
+        Project Start -->
         <div class="container-fluid project py-5 mb-5">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Our Project</h5>
-                    <h1>Our Recently Completed Projects</h1>
+                    <h5 class="text-primary">Technologie</h5>
+                    <h1>Utilizzate nel progetto</h1>
                 </div>
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="project-item">
                             <div class="project-img">
-                                <img src="img/project-1.jpg" class="img-fluid w-100 rounded" alt="">
+                                <img src="img/rfid.jpg" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
                                     <a href="#" class="text-center">
-                                        <h4 class="text-secondary">Web design</h4>
-                                        <p class="m-0 text-white">Web Analysis</p>
+                                        <h4 class="text-secondary">Rfid</h4>
+                                        <p class="m-0 text-white"></p>
                                     </a>
                                 </div>
                             </div>
@@ -324,11 +241,11 @@
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
                         <div class="project-item">
                             <div class="project-img">
-                                <img src="img/project-6.jpg" class="img-fluid w-100 rounded" alt="">
+                                <img src="img/crittografia.jpg" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
                                     <a href="#" class="text-center">
-                                        <h4 class="text-secondary">keyword Research</h4>
-                                        <p class="m-0 text-white">keyword Analysis</p>
+                                        <h4 class="text-secondary">Sicurezza</h4>
+                                        <p class="m-0 text-white">di comunicazione</p>
                                     </a>
                                 </div>
                             </div>
@@ -340,7 +257,7 @@
         <!-- Project End -->
 
 
-        <!-- Blog Start -->
+        <!-- Blog Start 
         <div class="container-fluid blog py-5 mb-5">
             <div class="container">
                 <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
@@ -536,105 +453,7 @@
         </div>
         <!-- Team End -->
 
-        <!-- Testimonial Start -->
-        <div class="container-fluid testimonial py-5 mb-5">
-            <div class="container">
-                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Our Testimonial</h5>
-                    <h1>Our Client Saying!</h1>
-                </div>
-                <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay=".5s">
-                    <div class="testimonial-item border p-4">
-                        <div class="d-flex align-items-center">
-                            <div class="">
-                                <img src="img/testimonial-1.jpg" alt="">
-                            </div>
-                            <div class="ms-4">
-                                <h4 class="text-secondary">Client Name</h4>
-                                <p class="m-0 pb-3">Profession</p>
-                                <div class="d-flex pe-5">
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="border-top mt-4 pt-3">
-                            <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-item border p-4">
-                        <div class=" d-flex align-items-center">
-                            <div class="">
-                                <img src="img/testimonial-2.jpg" alt="">
-                            </div>
-                            <div class="ms-4">
-                                <h4 class="text-secondary">Client Name</h4>
-                                <p class="m-0 pb-3">Profession</p>
-                                <div class="d-flex pe-5">
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="border-top mt-4 pt-3">
-                            <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-item border p-4">
-                        <div class=" d-flex align-items-center">
-                            <div class="">
-                                <img src="img/testimonial-3.jpg" alt="">
-                            </div>
-                            <div class="ms-4">
-                                <h4 class="text-secondary">Client Name</h4>
-                                <p class="m-0 pb-3">Profession</p>
-                                <div class="d-flex pe-5">
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="border-top mt-4 pt-3">
-                            <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-item border p-4">
-                        <div class=" d-flex align-items-center">
-                            <div class="">
-                                <img src="img/testimonial-4.jpg" alt="">
-                            </div>
-                            <div class="ms-4">
-                                <h4 class="text-secondary">Client Name</h4>
-                                <p class="m-0 pb-3">Profession</p>
-                                <div class="d-flex pe-5">
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                    <i class="fas fa-star me-1 text-primary"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="border-top mt-4 pt-3">
-                            <p class="mb-0">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum aliquam dolor eget urna. Nam volutpat libero sit amet leo cursus, ac viverra eros morbi quis quam mi.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Testimonial End -->
-
-
+        
         <!-- Contact Start -->
         <div class="container-fluid py-5 mb-5">
             <div class="container">
