@@ -2,7 +2,7 @@
 <div class="container-fluid bg-primary">
             <div class="container">
                 <nav class="navbar navbar-dark navbar-expand-lg py-0">
-                    <a href="index.php" class="navbar-brand">
+                    <a href="../index.php" class="navbar-brand">
                         <h1 class="text-white fw-bold d-block">Zizzu<span class="text-secondary">Line</span> </h1>
                     </a>
                     <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -10,11 +10,11 @@
                     </button>
                     <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                         <div class="navbar-nav ms-auto mx-xl-auto p-0">
-                            <a href="#" class="nav-item nav-link active text-secondary">Home</a>
-                            <a href="src/about.php" class="nav-item nav-link">About</a>
-                            <a href="src/service.php" class="nav-item nav-link">Services</a>
-                            <a href="src/table.php" class="nav-item nav-link">Tabel</a>
-                            <a href="src/project.php" class="nav-item nav-link">Projects</a>
+                            <a href="../index.php" class="nav-item nav-link active text-secondary">Home</a>
+                            <a href="about.php" class="nav-item nav-link">About</a>
+                            <a href="service.php" class="nav-item nav-link">Services</a>
+                            <a href="table.php" class="nav-item nav-link">Tabel</a>
+                            <a href="project.php" class="nav-item nav-link">Projects</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu rounded">
@@ -28,8 +28,6 @@
                         </div>
                     </div>
                     <div class="d-none d-xl-flex flex-shirink-0">
-                       
-                        
                         <div class="d-flex align-items-center justify-content-center ms-4 ">
                             <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
                         </div>
