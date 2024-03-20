@@ -198,7 +198,7 @@
     color: var(--bs-white);
     font-size: 18px;
     outline: none;
-    
+
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -350,7 +350,7 @@
     .carousel-item {
         min-height: 500px;
     }
-    
+
     .carousel-item img {
         min-height: 500px;
         object-fit: cover;
@@ -369,7 +369,7 @@
     .carousel-item {
         min-height: 400px;
     }
-    
+
     .carousel-item img {
         min-height: 400px;
         object-fit: cover;
