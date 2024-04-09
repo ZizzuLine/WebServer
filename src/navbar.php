@@ -9,49 +9,31 @@
                     </button>
                     <div class="collapse navbar-collapse bg-transparent" id="navbarCollapse">
                         <div class="navbar-nav ms-auto mx-xl-auto p-0">
-
                             <a href="../index.php" class="nav-item nav-link">Home</a>
                             <?php
                                 $current_page = $_SERVER['REQUEST_URI'];
-                                // About
-                                if ($current_page == "/zizzuline/Webserver/src/about.php") {
-                                    echo '<a href="about.php" class="nav-item nav-link active text-secondary">About</a>';
+                                // team
+                                if ($current_page == "/zizzuline/Webserver/src/team.php") {
+                                    echo '<a href="team.php" class="nav-item nav-link active text-secondary">Our Team</a>';
                                 } else {
-                                    echo '<a href="about.php" class="nav-item nav-link">About</a>';
-                                }
-                                // Services
-                                if ($current_page == "/zizzuline/Webserver/src/service.php") {
-                                    echo '<a href="service.php" class="nav-item nav-link active text-secondary">Services</a>';
-                                } else {
-                                    echo '<a href="service.php" class="nav-item nav-link">Services</a>';
-                                }
-                                // Table
-                                if ($current_page == "/zizzuline/Webserver/src/table.php") {
-                                    echo '<a href="table.php" class="nav-item nav-link active text-secondary">Table</a>';
-                                } else {
-                                    echo '<a href="table.php" class="nav-item nav-link">Table</a>';
-                                }
-                                // Projects
-                                if ($current_page == "/zizzuline/Webserver/src/project.php") {
-                                    echo '<a href="project.php" class="nav-item nav-link active text-secondary">Projects</a>';
-                                } else {
-                                    echo '<a href="project.php" class="nav-item nav-link">Projects</a>';
+                                    echo '<a href="team.php" class="nav-item nav-link">Our Team</a>';
                                 }
                             ?>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                                 <div class="dropdown-menu rounded">
-                                    <a href="blog.php" class="dropdown-item">Our Blog</a>
-                                    <a href="team.php" class="dropdown-item">Our Team</a>
-                                    <a href="testimonial.php" class="dropdown-item">Testimonial</a>
-                                    <a href="404.php" class="dropdown-item">404 Page</a>
+                                    <a href="src/blog.php" class="dropdown-item">Our Blog</a>
+                                    <a href="src/team.php" class="dropdown-item">Our Team</a>
+                                    <a href="src/testimonial.php" class="dropdown-item">Testimonial</a>
+                                    <a href="src/404.php" class="dropdown-item">404 Page</a>
                                 </div>
                             </div>
                             <?php
-                                if ($current_page == "/zizzuline/Webserver/src/contact.php") {
-                                    echo '<a href="contact.php" class="nav-item nav-link active text-secondary">Contact</a>';
+                                // Login
+                                if ($current_page == "/zizzuline/Webserver/src/login.php") {
+                                    echo '<a href="login.php" class="nav-item nav-link active text-secondary">Login</a>';
                                 } else {
-                                    echo '<a href="contact.php" class="nav-item nav-link">Contact</a>';
+                                    echo '<a href="login.php" class="nav-item nav-link">Login</a>';
                                 }
                             ?>
                         </div>
