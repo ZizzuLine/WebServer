@@ -143,6 +143,7 @@
                     <h1>Utilizzate nel progetto</h1>
                 </div>
             </div>
+            <br><br>
             <div class="row g-5">
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="project-item" onclick="window.location.href='src/bus.php';" style="cursor:pointer;">
