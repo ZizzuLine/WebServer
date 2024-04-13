@@ -26,9 +26,33 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Stile per la finestra modale */
+        .popup {
+            display: none;
+            margin-right: 20%;
+            position: fixed;
+            color: black;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .popup-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid green;
+            width: 80%;
+            border-radius: 20px;
+        }
+    </style>
 </head>
 
 <body>
+
     <!-- Spinner Start -->
     <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" role="status"></div>
@@ -76,7 +100,7 @@
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src="img/bus.jpg" class="img-fluid" alt="First slide" style="width: 1920px;" >
+                    <img src="img/bus.jpg" class="img-fluid" alt="First slide" style="width: 1920px;">
                     <div class="carousel-caption">
                         <div class="container carousel-content">
                             <h6 class="text-secondary h4 animated fadeInUp">ZizzuLine</h6>
@@ -110,12 +134,18 @@
                     <p>Nel costante sforzo di migliorare l'efficienza dei trasporti pubblici, l'introduzione del sistema di monitoraggio degli autobus attraverso RFID ha rivoluzionato il modo in cui gli utenti interagiscono con questo servizio essenziale. Grazie a questa innovativa tecnologia, ora è possibile accedere a informazioni in tempo reale sull'arrivo degli autobus alle fermate, rendendo i viaggi più prevedibili e comodi per tutti.
                         Il sistema sfrutta l'RFID, una tecnologia di identificazione a radiofrequenza, per tracciare e monitorare gli autobus lungo il loro percorso. Gli autobus sono equipaggiati con dispositivi RFID che comunicano con i tag RFID installati alle fermate. Questa comunicazione permette di determinare con precisione la posizione degli autobus e di fornire agli utenti informazioni aggiornate sull'orario di arrivo stimato.
                         Con l'aiuto di apposite applicazioni per smartphone o pannelli informativi installati alle fermate, gli utenti possono consultare facilmente l'orario previsto di arrivo degli autobus. Questo elimina l'incertezza e l'attesa prolungata alle fermate, consentendo agli utenti di pianificare i propri spostamenti in modo più efficiente e di ridurre i disagi legati ai ritardi.</p>
-                    <a href="" class="btn btn-secondary rounded-pill px-5 py-3 text-white">Più dettagli</a><br>
+                    <a onclick="openPopup()" class="btn btn-secondary rounded-pill px-5 py-3 text-white">Più dettagli</a><br>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- About End -->
+    <div id="popup" class="popup" onclick="closePopup(event)">
+        <div class="popup-content">
+            <p>Contenuto popup</p>
+        </div>
+    </div>
 
     <!-- Project Start -->
     <div class="container-fluid project py-5 mb-5">
@@ -240,6 +270,22 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- script -->
+    <script>
+        // Funzione per aprire la finestra modale
+        function openPopup() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        // Funzione per chiudere la finestra modale
+        function closePopup(event) {
+            var popup = document.getElementById("popup");
+            if (event.target == popup) {
+                popup.style.display = "none";
+            }
+        }
+    </script>
 
     <!-- Template Javascript -->
     <script src="src/js/main.js"></script>
