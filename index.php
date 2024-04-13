@@ -76,7 +76,7 @@
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src="img/carousel-1.jpg" class="img-fluid" alt="First slide">
+                    <img src="img/bus.jpg" class="img-fluid" alt="First slide" style="width: 1920px;" >
                     <div class="carousel-caption">
                         <div class="container carousel-content">
                             <h6 class="text-secondary h4 animated fadeInUp">ZizzuLine</h6>
