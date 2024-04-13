@@ -20,7 +20,9 @@
         $query = "SELECT * FROM temperature WHERE DATE(timestamp) = CURDATE()";
     } elseif ($filter_type == '1hour') {
         $query = "SELECT * FROM temperature WHERE timestamp >= DATE_SUB(NOW(), INTERVAL 1 HOUR)";
-    } elseif ($filter_type == 'average') {
+    } elseif ($filter_type == 'week') {
+        $query = "SELECT * FROM temperature WHERE WEEK(timestamp) = WEEK(NOW()) AND YEAR(timestamp) = YEAR(NOW())";
+    }elseif ($filter_type == 'average') {
         $query = "SELECT AVG(value) AS average_temperature FROM temperature";
         $result = mysqli_query($conn, $query);
         $row = mysqli_fetch_assoc($result);
@@ -70,6 +72,7 @@
                 <select name="filter_type">
                     <option value="today">Today</option>
                     <option value="1hour">Last Hour</option>
+                    <option value="week">Entire Week</option>
                     <option value="average">Average Temperature</option>
                 </select>
                 <input type="submit" value="Filter">
