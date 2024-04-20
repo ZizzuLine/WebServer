@@ -66,6 +66,22 @@ $conn->close();
     </div>
 
 <?php
+    
+    // Controllo se è stata inviata una richiesta GET con il parametro id_argument
+    if (isset($_GET['id_argument'])) {
+        $id_argument = $_GET['id_argument'];
+        
+        // Modifica il titolo in base al valore di id_argument
+        if ($id_argument === 'id1') {
+            echo "<h1>Temperature Visualization</h1>";
+        } elseif ($id_argument === 'id2') {
+            echo "<h1>Humidity Visualization</h1>";
+        } else {
+            echo "<h1>Invalid Argument</h1>";
+        }
+    } else {
+        echo "<h1>No Argument Provided</h1>";
+    }
     include "../graphic.php";
     
 ?>
