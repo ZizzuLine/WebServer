@@ -2,16 +2,16 @@
 $channel_id = "2497042"; // id public channel
 $api_key = "H6Y216Q86ERLFYI1"; // api key write
 
-// Definisci la mappatura dei campi ThingSpeak ai rispettivi ID nel database
-$field_to_id_mapping = array(
-    'field1' => array('table' => 'temperature', 'id' => 1),
-    'field2' => array('table' => 'humidity', 'id' => 2),
-    'field3' => array('table' => '', 'id' => 3),
-    'field4' => array('table' => '', 'id' => 4),
-    'field5' => array('table' => '', 'id' => 5),
-    'field6' => array('table' => '', 'id' => 6),
-    'field7' => array('table' => '', 'id' => 7),
-    'field8' => array('table' => '', 'id' => 8),
+// Definisci la mappatura dei campi ThingSpeak alle rispettive tabelle nel database
+$field_to_table_mapping = array(
+    'field1' => 'temperature',
+    'field2' => 'humidity',
+    'field3' => '',
+    'field4' => '',
+    'field5' => '',
+    'field6' => '',
+    'field7' => '',
+    'field8' => '',
 );
 
 // cURL-init
@@ -19,12 +19,9 @@ $ch = curl_init();
 curl_setopt($ch, CURLOPT_PROXY, ""); // Bypass proxy
 
 // Esegui la richiesta per ogni campo
-foreach ($field_to_id_mapping as $field => $db_info) {
-    $table = $db_info['table'];
-    $db_id = $db_info['id'];
-    
+foreach ($field_to_table_mapping as $field => $table) {
     //create url post thingspeak
-    $url = "https://api.thingspeak.com/channels/$channel_id/fields/$db_id/last.json?api_key=$api_key";
+    $url = "https://api.thingspeak.com/channels/$channel_id/fields/$field/last.json?api_key=$api_key";
 
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -48,35 +45,48 @@ foreach ($field_to_id_mapping as $field => $db_info) {
             if (!$conn) {
                 echo "Connection failed!";
             } else {
-                // time and date of last modify on thingspeak
-                $timestamp = date("Y-m-d H:i:s");
-
                 // Controlla se il valore attuale è diverso dall'ultimo valore nel database
-                $check_query = "SELECT value FROM $table WHERE id = '$db_id' ORDER BY timestamp DESC LIMIT 1";
-                $check_result = mysqli_query($conn, $check_query);
+                if (!empty($table)) {
+                    $check_query = "SELECT value FROM $table ORDER BY id DESC LIMIT 1";
+                    $check_result = mysqli_query($conn, $check_query);
 
-                if (mysqli_num_rows($check_result) > 0) {
-                    $row = mysqli_fetch_assoc($check_result);
-                    $last_value = $row['value'];
-                    if ($value != $last_value) {
-                        // Se il valore è cambiato, aggiorna il timestamp e il valore nel database
-                        $sql = "UPDATE $table SET timestamp = '$timestamp', value = '$value' WHERE id = '$db_id'";
-                        if (mysqli_query($conn, $sql)) {
-                            echo "Record updated successfully";
+                    if (mysqli_num_rows($check_result) > 0) {
+                        $row = mysqli_fetch_assoc($check_result);
+                        $last_value = $row['value'];
+                        if ($value != $last_value) {
+                            // Ottieni l'ID più alto presente nella tabella e incrementalo di uno
+                            $check_id_query = "SELECT MAX(id) AS max_id FROM $table";
+                            $check_id_result = mysqli_query($conn, $check_id_query);
+                            $row_id = mysqli_fetch_assoc($check_id_result);
+                            $next_id = $row_id['max_id'] + 1;
+
+                            // time and date of last modify on thingspeak
+                            $timestamp = date("Y-m-d H:i:s");
+
+                            // Inserisci il nuovo record con l'ID incrementato
+                            $sql = "INSERT INTO $table (id, timestamp, value) VALUES ('$next_id', '$timestamp', '$value')";
+                            if (mysqli_query($conn, $sql)) {
+                                echo "Record inserted successfully";
+                            } else {
+                                echo "Error inserting record: " . mysqli_error($conn);
+                            }
                         } else {
-                            echo "Error updating record: " . mysqli_error($conn);
+                            echo "No variance in value, not updating database.";
                         }
                     } else {
-                        echo "No variance in value, not updating database.";
+                        // time and date of last modify on thingspeak
+                        $timestamp = date("Y-m-d H:i:s");
+
+                        // Inserisci il nuovo record con l'ID incrementato
+                        $sql = "INSERT INTO $table (id, timestamp, value) VALUES ('1', '$timestamp', '$value')";
+                        if (mysqli_query($conn, $sql)) {
+                            echo "Record inserted successfully";
+                        } else {
+                            echo "Error inserting record: " . mysqli_error($conn);
+                        }
                     }
                 } else {
-                    // Se non ci sono record nel database, inserisci il nuovo record
-                    $sql = "INSERT INTO $table (timestamp, id, value) VALUES ('$timestamp', '$db_id', '$value')";
-                    if (mysqli_query($conn, $sql)) {
-                        echo "Record inserted successfully";
-                    } else {
-                        echo "Error inserting record: " . mysqli_error($conn);
-                    }
+                    echo "No table specified for field $field.";
                 }
 
                 mysqli_close($conn);
