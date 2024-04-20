@@ -180,8 +180,8 @@
                         <div class="project-img">
                             <img src="img/rfid.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
-                                <a class="text-center">
-                                    <h4 class="text-secondary">Temperatura</h4>
+                                <a href="graphic.php?id_argument=id1" class="text-center" onclick="event.stopPropagation();">
+                                    <h4 class="text-secondary">Rfid</h4>
                                     <p class="m-0 text-white"></p>
                                 </a>
                             </div>
@@ -193,7 +193,7 @@
                         <div class="project-img">
                             <img src="img/project-2.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
-                                <a class="text-center">
+                                <a href="graphic.php?id_argument=id2" class="text-center">
                                     <h4 class="text-secondary">Umidità</h4>
                                     <p class="m-0 text-white"></p>
                                 </a>
@@ -206,7 +206,7 @@
                         <div class="project-img">
                             <img src="img/project-3.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
-                                <a class="text-center">
+                                <a href="graphic.php?id_argument=id3" class="text-center">
                                     <h4 class="text-secondary">Velocità</h4>
                                     <p class="m-0 text-white">Upcomming Phone</p>
                                 </a>
@@ -219,7 +219,7 @@
                         <div class="project-img">
                             <img src="img/project-4.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
-                                <a class="text-center">
+                                <a href="graphic.php?id_argument=id4" class="text-center">
                                     <h4 class="text-secondary">Carburante</h4>
                                     <p class="m-0 text-white">Web Analysis</p>
                                 </a>
@@ -232,7 +232,7 @@
                         <div class="project-img">
                             <img src="img/project-5.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
-                                <a class="text-center">
+                                <a href="graphic.php?id_argument=id5" class="text-center">
                                     <h4 class="text-secondary">Percorso</h4>
                                     <p class="m-0 text-white">Marketing Analysis</p>
                                 </a>
