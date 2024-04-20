@@ -104,8 +104,8 @@
                     <div class="carousel-caption">
                         <div class="container carousel-content">
                             <h6 class="text-secondary h4 animated fadeInUp">ZizzuLine</h6>
-                            <h1 class="text-white display-1 mb-4 animated fadeInRight">Progetto di Tracciamento RFID degli Autobus</h1>
-                            <p class="mb-4 text-white fs-5 animated fadeInDown">Un'Esperienza di Collaborazione nella Classe di Informatica.</p>
+                            <h1 class="text-white display-1 mb-4 animated fadeInRight">Autobus System</h1>
+                            <p class="mb-4 text-white fs-5 animated fadeInDown"></p>
                             <a href="#introduzione" class="me-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn1 animated fadeInLeft">Leggi di più</button></a>
                             <a href="src/team.php" class="ms-2"><button type="button" class="px-4 py-sm-3 px-sm-5 btn btn-primary rounded-pill carousel-content-btn2 animated fadeInRight">Contattaci</button></a>
                         </div>
@@ -181,7 +181,7 @@
                             <img src="img/rfid.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
                                 <a class="text-center">
-                                    <h4 class="text-secondary">Rfid</h4>
+                                    <h4 class="text-secondary">Temperatura</h4>
                                     <p class="m-0 text-white"></p>
                                 </a>
                             </div>
@@ -194,7 +194,7 @@
                             <img src="img/project-2.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
                                 <a class="text-center">
-                                    <h4 class="text-secondary">Bus</h4>
+                                    <h4 class="text-secondary">Umidità</h4>
                                     <p class="m-0 text-white"></p>
                                 </a>
                             </div>
@@ -207,7 +207,7 @@
                             <img src="img/project-3.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
                                 <a class="text-center">
-                                    <h4 class="text-secondary">Mobile Info</h4>
+                                    <h4 class="text-secondary">Velocità</h4>
                                     <p class="m-0 text-white">Upcomming Phone</p>
                                 </a>
                             </div>
@@ -220,7 +220,7 @@
                             <img src="img/project-4.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
                                 <a class="text-center">
-                                    <h4 class="text-secondary">Web Development</h4>
+                                    <h4 class="text-secondary">Carburante</h4>
                                     <p class="m-0 text-white">Web Analysis</p>
                                 </a>
                             </div>
@@ -233,21 +233,8 @@
                             <img src="img/project-5.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
                                 <a class="text-center">
-                                    <h4 class="text-secondary">Digital Marketing</h4>
+                                    <h4 class="text-secondary">Percorso</h4>
                                     <p class="m-0 text-white">Marketing Analysis</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn d-flex justify-content-center align-items-center" data-wow-delay=".7s">
-                    <div class="project-item" onclick="window.location.href='src/bus.php';" style="cursor:pointer;">
-                        <div class="project-img">
-                            <img src="img/crittografia.jpg" class="img-fluid w-100 rounded" alt="">
-                            <div class="project-content">
-                                <a class="text-center">
-                                    <h4 class="text-secondary">Sicurezza</h4>
-                                    <p class="m-0 text-white">di comunicazione</p>
                                 </a>
                             </div>
                         </div>
