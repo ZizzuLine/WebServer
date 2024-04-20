@@ -174,13 +174,13 @@
                 </div>
             </div>
             <br><br>
-            <div class="row g-5">
+            <div class="row g-5" >
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                    <div class="project-item" onclick="window.location.href='src/bus.php';" style="cursor:pointer;">
+                    <div class="project-item" style="cursor:pointer;">
                         <div class="project-img">
                             <img src="img/rfid.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
-                                <a href="graphic.php?id_argument=id1" class="text-center" onclick="event.stopPropagation();">
+                                <a href="src/bus.php" class="text-center">
                                     <h4 class="text-secondary">Rfid</h4>
                                     <p class="m-0 text-white"></p>
                                 </a>
@@ -202,7 +202,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                    <div class="project-item" onclick="window.location.href='src/bus.php';" style="cursor:pointer;">
+                    <div class="project-item" style="cursor:pointer;">
                         <div class="project-img">
                             <img src="img/project-3.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
