@@ -72,9 +72,9 @@ $conn->close();
         $id_argument = $_GET['id_argument'];
         
         // Modifica il titolo in base al valore di id_argument
-        if ($id_argument === 'id1') {
+        if ($id_argument === '1') {
             echo "<h1>Temperature Visualization</h1>";
-        } elseif ($id_argument === 'id2') {
+        } elseif ($id_argument === '2') {
             echo "<h1>Humidity Visualization</h1>";
         } else {
             echo "<h1>Invalid Argument</h1>";
@@ -82,9 +82,34 @@ $conn->close();
     } else {
         echo "<h1>No Argument Provided</h1>";
     }
-    include "../graphic.php";
+
+
+//start call function file update_data to update thingspeak-db values in background
+    include "update_data.php";
+
+    $channel_id = "2497042"; 
+    $api_key = "H6Y216Q86ERLFYI1"; 
+    $field_to_table_mapping = array(
+        'field1' => 'temperature',
+        'field2' => 'humidity',
+        'field3' => '',
+        'field4' => '',
+        'field5' => '',
+        'field6' => '',
+        'field7' => '',
+        'field8' => '',
+    );
+
     
-?>
+    updateDatabaseFromThingSpeak($channel_id, $api_key, $field_to_table_mapping);
+//end
+
+
+    //graphic
+    $_GET['idselector']="$id_argument";
+    include '../graphic.php';
+
+?>  
 
 
 
