@@ -176,7 +176,7 @@
             <br><br>
             <div class="row g-5" >
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                    <div class="project-item" style="cursor:pointer;">
+                    <div class="project-item" >
                         <div class="project-img">
                             <img src="img/temperatura.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
@@ -188,7 +188,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                    <div class="project-item" onclick="window.location.href='src/bus.php';" style="cursor:pointer;">
+                    <div class="project-item" >
                         <div class="project-img">
                             <img src="img/umidità.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
@@ -200,7 +200,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                    <div class="project-item" style="cursor:pointer;">
+                    <div class="project-item" >
                         <div class="project-img">
                             <img src="img/velocità.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
@@ -214,7 +214,7 @@
                 </div>
                 <div class="row justify-content-center g-5">
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="project-item" onclick="window.location.href='src/bus.php';" style="cursor:pointer;">
+                        <div class="project-item" >
                             <div class="project-img">
                                 <img src="img/carburante.jpg" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
@@ -226,7 +226,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="project-item" onclick="window.location.href='src/bus.php';" style="cursor:pointer;">
+                        <div class="project-item" >
                             <div class="project-img">
                                 <img src="img/percorso.jpg" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
