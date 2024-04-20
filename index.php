@@ -180,14 +180,8 @@
                         <div class="project-img">
                             <img src="img/temperatura.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
-<<<<<<< HEAD
                                 <a class="text-center">
                                     <h4 class="text-secondary">Temperatura</h4>
-=======
-                                <a href="graphic.php?id_argument=id1" class="text-center" onclick="event.stopPropagation();">
-                                    <h4 class="text-secondary">Rfid</h4>
-                                    <p class="m-0 text-white"></p>
->>>>>>> 3f242450a87e970c6ee5034797cdbcc9b88a3bcd
                                 </a>
                             </div>
                         </div>
@@ -218,7 +212,6 @@
                         </div>
                     </div>
                 </div>
-<<<<<<< HEAD
                 <div class="row justify-content-center g-5">
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="project-item" onclick="window.location.href='src/bus.php';" style="cursor:pointer;">
@@ -241,30 +234,6 @@
                                         <h4 class="text-secondary">Percorso</h4>
                                     </a>
                                 </div>
-=======
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                    <div class="project-item" onclick="window.location.href='src/bus.php';" style="cursor:pointer;">
-                        <div class="project-img">
-                            <img src="img/project-4.jpg" class="img-fluid w-100 rounded" alt="">
-                            <div class="project-content">
-                                <a href="graphic.php?id_argument=id4" class="text-center">
-                                    <h4 class="text-secondary">Carburante</h4>
-                                    <p class="m-0 text-white">Web Analysis</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                    <div class="project-item" onclick="window.location.href='src/bus.php';" style="cursor:pointer;">
-                        <div class="project-img">
-                            <img src="img/project-5.jpg" class="img-fluid w-100 rounded" alt="">
-                            <div class="project-content">
-                                <a href="graphic.php?id_argument=id5" class="text-center">
-                                    <h4 class="text-secondary">Percorso</h4>
-                                    <p class="m-0 text-white">Marketing Analysis</p>
-                                </a>
->>>>>>> 3f242450a87e970c6ee5034797cdbcc9b88a3bcd
                             </div>
                         </div>
                     </div>
