@@ -180,7 +180,7 @@
                         <div class="project-img">
                             <img src="img/temperatura.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
-                                <a class="text-center" href="src/bus.php?id_argument=id1">
+                                <a class="text-center" href="src/bus.php?id_argument=1">
                                     <h4 class="text-secondary">Temperatura</h4>
                                 </a>
                             </div>
@@ -192,7 +192,7 @@
                         <div class="project-img">
                             <img src="img/umidità.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
-                            <a class="text-center" href="src/bus.php?id_argument=id2">
+                            <a class="text-center" href="src/bus.php?id_argument=2">
                                     <h4 class="text-secondary">Umidità</h4>
                                 </a>
                             </div>
