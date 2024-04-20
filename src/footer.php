@@ -7,9 +7,9 @@
                 </a>
                 <p class="mt-4 text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta facere delectus qui placeat inventore consectetur repellendus optio debitis.</p>
                 <div class="d-flex hightech-link">
-                    <a href="https://www.facebook.com/polotecnologicoimperiese" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
-                    <a href="https://telegram.me/ptifamiglie" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-telegram text-primary"></i></a>
-                    <a href="https://www.instagram.com/polotecnologicoimperiese/" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-primary"></i></a>
+                    <a href="https://www.facebook.com/polotecnologicoimperiese" target="_blank" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-facebook-f text-primary"></i></a>
+                    <a href="https://telegram.me/ptifamiglie" target="_blank" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-telegram text-primary"></i></a>
+                    <a href="https://www.instagram.com/polotecnologicoimperiese/" target="_blank" class="btn-light nav-fill btn btn-square rounded-circle me-2"><i class="fab fa-instagram text-primary"></i></a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -18,38 +18,34 @@
                     <?php
                     $current_page = $_SERVER['REQUEST_URI'];
                     // team
-                    if ($current_page == "/zizzuline/Webserver/index.php") {
+                    if ($current_page == "/zizzuline/Webserver/index.php" || $current_page ==  "/zizzuline/Webserver/index.php%20#services") {
                         echo '<a href="index.php" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Home</a>
                         <a href="src/team.php" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Team</a>
-                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Services</a>
-                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Projects</a>
-                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Latest Blog</a>';
+                        <a href="#services" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Services</a>';
                     } else {
-                        echo '<a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>About us</a>
-                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact us</a>
-                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Services</a>
-                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Projects</a>
-                        <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Latest Blog</a>';
+                        echo '<a href="../index.php" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Home</a>
+                        <a href="team.php" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Team</a>
+                        <a href="../index.php #services" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Services</a>';
                     }
                     ?>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <a href="#" class="h3 text-secondary">Help Link</a>
+                <a href="#" class="h3 text-secondary">Service Link</a>
                 <div class="mt-4 d-flex flex-column help-link">
-                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Terms Of use</a>
-                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Privacy Policy</a>
-                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Helps</a>
-                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>FQAs</a>
-                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact</a>
+                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Temperatura</a>
+                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Umidità</a>
+                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Velocità</a>
+                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Carburante</a>
+                    <a href="" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Percorso</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <a href="#" class="h3 text-secondary">Contact Us</a>
                 <div class="text-white mt-4 d-flex flex-column contact-link">
-                    <a href="#" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Via S.Lucia 31, Imperia, Italia</a>
-                    <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> (+39) 0183295958</a>
-                    <a href="#" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> imis002001@istruzione.it</a>
+                    <a href="https://www.polotecnologicoimperiese.edu.it" target="_blank" class="pb-3 text-light border-bottom border-primary"><i class="fas fa-map-marker-alt text-secondary me-2"></i> Via S.Lucia 31, Imperia, Italia</a>
+                    <a href="https://www.polotecnologicoimperiese.edu.it" target="_blank" class="py-3 text-light border-bottom border-primary"><i class="fas fa-phone-alt text-secondary me-2"></i> (+39) 0183295958</a>
+                    <a href="https://www.polotecnologicoimperiese.edu.it" target="_blank" class="py-3 text-light border-bottom border-primary"><i class="fas fa-envelope text-secondary me-2"></i> imis002001@istruzione.it</a>
                 </div>
             </div>
         </div>
