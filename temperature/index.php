@@ -31,7 +31,7 @@
         exit();
     }
     
-    $time = date("d-m-Y H:i:s");
+    $time = date("Y-m-d H:i:s");
     echo $time;
 
     $result = mysqli_query($conn, $query);
