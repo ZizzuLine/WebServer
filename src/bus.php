@@ -82,7 +82,6 @@ $conn->close();
     } else {
         echo "<h1>No Argument Provided</h1>";
     }
-<<<<<<< HEAD
 
 
 //start call function file update_data to update thingspeak-db values in background
@@ -111,11 +110,6 @@ $conn->close();
     include '../graphic.php';
 
 ?>  
-=======
-    include "../graphic.php";
-
-?>
->>>>>>> e34f544f3c5e61d97804d13e0ed2b90ff34b4d5e
 
 
 
