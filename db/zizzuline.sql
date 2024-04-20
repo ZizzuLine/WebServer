@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 20. Apr 2024 um 09:03
+-- Erstellungszeit: 20. Apr 2024 um 09:33
 -- Server-Version: 10.4.32-MariaDB
 -- PHP-Version: 8.2.12
 
@@ -60,7 +60,7 @@ CREATE TABLE `humidity` (
 --
 
 INSERT INTO `humidity` (`id`, `value`, `timestamp`) VALUES
-(2, 2, '2024-04-20 08:59:00');
+(1, 3, '2024-04-20 09:31:03');
 
 -- --------------------------------------------------------
 
@@ -79,7 +79,9 @@ CREATE TABLE `temperature` (
 --
 
 INSERT INTO `temperature` (`id`, `value`, `timestamp`) VALUES
-(1, 2, '2024-04-20 08:58:41');
+(1, 7, '2024-04-20 09:29:51'),
+(2, 9, '2024-04-20 09:30:12'),
+(3, 75, '2024-04-20 09:31:35');
 
 --
 -- Indizes der exportierten Tabellen
@@ -112,18 +114,6 @@ ALTER TABLE `temperature`
 --
 ALTER TABLE `autobus`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT für Tabelle `humidity`
---
-ALTER TABLE `humidity`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT für Tabelle `temperature`
---
-ALTER TABLE `temperature`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
