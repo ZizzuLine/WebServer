@@ -174,28 +174,20 @@
                 </div>
             </div>
             <br><br>
-<<<<<<< HEAD
             <div class="row g-5" >
-=======
-            <div id="services" class="row g-5">
->>>>>>> 2a53e166ffb86cffb64031816c048e8a61b2b432
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="project-item" style="cursor:pointer;">
                         <div class="project-img">
                             <img src="img/temperatura.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
-<<<<<<< HEAD
+
                                 <a href="src/bus.php" class="text-center">
-=======
-<<<<<<< HEAD
+
                                 <a class="text-center">
                                     <h4 class="text-secondary">Temperatura</h4>
-=======
                                 <a href="graphic.php?id_argument=id1" class="text-center" onclick="event.stopPropagation();">
->>>>>>> 2a53e166ffb86cffb64031816c048e8a61b2b432
                                     <h4 class="text-secondary">Rfid</h4>
                                     <p class="m-0 text-white"></p>
->>>>>>> 3f242450a87e970c6ee5034797cdbcc9b88a3bcd
                                 </a>
                             </div>
                         </div>
@@ -226,7 +218,7 @@
                         </div>
                     </div>
                 </div>
-<<<<<<< HEAD
+
                 <div class="row justify-content-center g-5">
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="project-item" onclick="window.location.href='src/bus.php';" style="cursor:pointer;">
