@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 18. Apr 2024 um 19:10
+-- Erstellungszeit: 20. Apr 2024 um 09:03
 -- Server-Version: 10.4.32-MariaDB
 -- PHP-Version: 8.2.12
 
@@ -46,13 +46,32 @@ INSERT INTO `autobus` (`id`, `rfid`, `posizione_attuale`, `posizione_iniziale`, 
 -- --------------------------------------------------------
 
 --
+-- Tabellenstruktur für Tabelle `humidity`
+--
+
+CREATE TABLE `humidity` (
+  `id` int(11) NOT NULL,
+  `value` float NOT NULL,
+  `timestamp` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Daten für Tabelle `humidity`
+--
+
+INSERT INTO `humidity` (`id`, `value`, `timestamp`) VALUES
+(2, 2, '2024-04-20 08:59:00');
+
+-- --------------------------------------------------------
+
+--
 -- Tabellenstruktur für Tabelle `temperature`
 --
 
 CREATE TABLE `temperature` (
   `id` int(11) NOT NULL,
   `value` float NOT NULL,
-  `timestamp` timestamp NOT NULL DEFAULT current_timestamp()
+  `timestamp` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -60,16 +79,7 @@ CREATE TABLE `temperature` (
 --
 
 INSERT INTO `temperature` (`id`, `value`, `timestamp`) VALUES
-(1, 20.5, '2024-04-11 06:00:00'),
-(2, 21.2, '2024-04-11 07:00:00'),
-(3, 22, '2024-04-11 08:00:00'),
-(4, 23.5, '2024-04-11 09:00:00'),
-(5, 24.8, '2024-04-11 10:00:00'),
-(6, 25.3, '2024-04-11 11:00:00'),
-(7, 26.1, '2024-04-11 12:00:00'),
-(8, 25.7, '2024-04-11 13:00:00'),
-(9, 24.9, '2024-04-11 14:00:00'),
-(10, 23.6, '2024-04-11 15:00:00');
+(1, 2, '2024-04-20 08:58:41');
 
 --
 -- Indizes der exportierten Tabellen
@@ -79,6 +89,12 @@ INSERT INTO `temperature` (`id`, `value`, `timestamp`) VALUES
 -- Indizes für die Tabelle `autobus`
 --
 ALTER TABLE `autobus`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indizes für die Tabelle `humidity`
+--
+ALTER TABLE `humidity`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -98,10 +114,16 @@ ALTER TABLE `autobus`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
+-- AUTO_INCREMENT für Tabelle `humidity`
+--
+ALTER TABLE `humidity`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT für Tabelle `temperature`
 --
 ALTER TABLE `temperature`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
