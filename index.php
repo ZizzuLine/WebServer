@@ -174,7 +174,7 @@
                 </div>
             </div>
             <br><br>
-            <div class="row g-5" >
+            <div id="services" class="row g-5" >
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                     <div class="project-item" >
                         <div class="project-img">

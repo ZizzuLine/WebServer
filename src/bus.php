@@ -48,7 +48,7 @@ $conn->close();
     <div class="navbar">
         <!-- <a href="?opzione=default">Home</a> -->
         <a href="../index.php">Home</a>
-        <div class="dropdown">
+        <!-- <div class="dropdown">
             <button class="dropbtn">Opzioni
                 <i class="fa fa-caret-down"></i>
             </button>
@@ -56,7 +56,7 @@ $conn->close();
                 <a href="?opzione=bus-1">Bus-1</a>
                 <a href="?opzione=bus-2">Bus-2</a>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <!-- Contenuto dinamico -->
@@ -66,11 +66,11 @@ $conn->close();
     </div>
 
 <?php
-    
+
     // Controllo se è stata inviata una richiesta GET con il parametro id_argument
     if (isset($_GET['id_argument'])) {
         $id_argument = $_GET['id_argument'];
-        
+
         // Modifica il titolo in base al valore di id_argument
         if ($id_argument === '1') {
             echo "<h1>Temperature Visualization</h1>";
@@ -82,6 +82,7 @@ $conn->close();
     } else {
         echo "<h1>No Argument Provided</h1>";
     }
+<<<<<<< HEAD
 
 
 //start call function file update_data to update thingspeak-db values in background
@@ -110,6 +111,11 @@ $conn->close();
     include '../graphic.php';
 
 ?>  
+=======
+    include "../graphic.php";
+
+?>
+>>>>>>> e34f544f3c5e61d97804d13e0ed2b90ff34b4d5e
 
 
 
