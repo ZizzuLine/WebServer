@@ -13,7 +13,16 @@ if (isset($_GET['idselector']) && $_GET['idselector'] === '1') {
     $table = "temperature";
 } elseif (isset($_GET['idselector']) && $_GET['idselector'] === '2') {
     $table = "humidity";
-} else {
+} 
+elseif (isset($_GET['idselector']) && $_GET['idselector'] === '3') {
+    $table = "speed";
+}
+elseif (isset($_GET['idselector']) && $_GET['idselector'] === '4') {
+    $table = "fuel";
+}
+elseif (isset($_GET['idselector']) && $_GET['idselector'] === '5') {
+    $table = "route";
+}else {
     // Se l'id non è valido, visualizza un messaggio di errore
     echo "Invalid ID";
     exit();
