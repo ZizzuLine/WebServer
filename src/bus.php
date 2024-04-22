@@ -76,7 +76,16 @@ $conn->close();
             echo "<h1>Temperature Visualization</h1>";
         } elseif ($id_argument === '2') {
             echo "<h1>Humidity Visualization</h1>";
-        } else {
+        } 
+        elseif ($id_argument === '3') {
+            echo "<h1>Speed Visualization</h1>";
+        }
+        elseif ($id_argument === '4') {
+            echo "<h1>Fuel Visualization</h1>";
+        }
+        elseif ($id_argument === '5') {
+            echo "<h1>Route Visualization</h1>";
+        }else {
             echo "<h1>Invalid Argument</h1>";
         }
     } else {
@@ -92,8 +101,8 @@ $conn->close();
     $field_to_table_mapping = array(
         'field1' => 'temperature',
         'field2' => 'humidity',
-        'field3' => '',
-        'field4' => '',
+        'field3' => 'speed',
+        'field4' => 'fuel',
         'field5' => '',
         'field6' => '',
         'field7' => '',
