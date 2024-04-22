@@ -190,7 +190,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
                     <div class="project-item" >
                         <div class="project-img">
-                            <img src="img/umidità.jpg" class="img-fluid w-100 rounded" alt="">
+                            <img src="img/umidita.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
                             <a class="text-center" href="src/bus.php?id_argument=2">
                                     <h4 class="text-secondary">Umidità</h4>
@@ -202,7 +202,7 @@
                 <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
                     <div class="project-item" >
                         <div class="project-img">
-                            <img src="img/velocità.jpg" class="img-fluid w-100 rounded" alt="">
+                            <img src="img/velocita.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
                             <a class="text-center" href="src/bus.php?id_argument=3">
                                     <h4 class="text-secondary">Velocità</h4>
