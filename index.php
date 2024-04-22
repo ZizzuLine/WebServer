@@ -82,7 +82,7 @@
                                 <a href="src/404.php" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
-                        <a href="login" class="nav-item nav-link">Login</a>
+                        <a href="src/login.html" class="nav-item nav-link">Login</a>
                     </div>
                 </div>
                 <div class="d-none d-xl-flex flex-shirink-0">
@@ -100,7 +100,7 @@
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <img src="img/bus.jpg" class="img-fluid" alt="First slide" style="width: 1920px;">
+                    <img src="img/bus.jpg" class="img-fluid" alt="First slide" style="width: 100%">
                     <div class="carousel-caption">
                         <div class="container carousel-content">
                             <h6 class="text-secondary h4 animated fadeInUp">ZizzuLine</h6>
