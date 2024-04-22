@@ -204,7 +204,7 @@
                         <div class="project-img">
                             <img src="img/velocità.jpg" class="img-fluid w-100 rounded" alt="">
                             <div class="project-content">
-                            <a class="text-center" href="src/bus.php?id_argument=id3">
+                            <a class="text-center" href="src/bus.php?id_argument=3">
                                     <h4 class="text-secondary">Velocità</h4>
                                     <!-- <p class="m-0 text-white">Upcomming Phone</p> -->
                                 </a>
@@ -218,7 +218,7 @@
                             <div class="project-img">
                                 <img src="img/carburante.jpg" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
-                                <a class="text-center" href="src/bus.php?id_argument=id4">
+                                <a class="text-center" href="src/bus.php?id_argument=4">
                                         <h4 class="text-secondary">Carburante</h4>
                                     </a>
                                 </div>
@@ -230,7 +230,7 @@
                             <div class="project-img">
                                 <img src="img/percorso.jpg" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
-                                <a class="text-center" href="src/bus.php?id_argument=id5">
+                                <a class="text-center" href="src/bus.php?id_argument=5">
                                         <h4 class="text-secondary">Percorso</h4>
                                     </a>
                                 </div>
