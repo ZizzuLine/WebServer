@@ -42,6 +42,8 @@ if ($filter_type == 'today') {
     $average_value = $row['average_value'];
     echo "<p>Average Value: $average_value</p>";
     exit();
+} elseif ($filter_type == 'entire') {
+    $query = "SELECT * FROM $table";
 }
 
 $result = mysqli_query($conn, $query);
@@ -81,6 +83,7 @@ $chart_data = [
                     <option value="today">Today</option>
                     <option value="1hour">Last Hour</option>
                     <option value="week">Entire Week</option>
+                    <option value="entire">Entire Values</option>
                     <option value="average">Average Value</option>
                 </select>
                 <input type="submit" value="Filter">
