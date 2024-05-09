@@ -50,7 +50,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.php" class="nav-item nav-link active">Home</a>
-                <a href="src/services.php?id_argument=1" class="nav-item nav-link">Services</a>   <!-- default id = temperature-->
+                <a href="#servizi" class="nav-item nav-link">Services</a>
                 <a href="courses.php" class="nav-item nav-link">Courses</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
@@ -62,7 +62,7 @@
                 </div>
                 <a href="contact.php" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="src/login.php" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">accedi<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="src/login.php" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Accedi<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -81,7 +81,7 @@
                                 <h1 class="display-3 text-white animated slideInDown">The Best Online Learning Platform</h1>
                                 <p class="fs-5 text-white mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea sanctus eirmod elitr.</p>
                                 <a href="#about" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Leggi Di Più</a>
-                                <a href="src/login.php" class="btn btn-light py-md-3 px-md-5 animated slideInRight">accedi</a>
+                                <a href="src/login.php" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Accedi</a>
                             </div>
                         </div>
                     </div>
@@ -181,7 +181,7 @@
 
 
     <!-- Categories Start -->
-    <div class="container-xxl py-5 category">
+    <div id="servizi" class="container-xxl py-5 category">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
