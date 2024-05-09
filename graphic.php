@@ -28,24 +28,54 @@ elseif (isset($_GET['idselector']) && $_GET['idselector'] === '5') {
     exit();
 }
 
-// Crea la query SQL in base al tipo di filtro e alla tabella del database
-if ($filter_type == 'today') {
-    $query = "SELECT * FROM $table WHERE DATE(timestamp) = CURDATE()";
-} elseif ($filter_type == '1hour') {
-    $query = "SELECT * FROM $table WHERE timestamp >= DATE_SUB(NOW(), INTERVAL 1 HOUR)";
-} elseif ($filter_type == 'week') {
-    $query = "SELECT * FROM $table WHERE WEEK(timestamp) = WEEK(NOW()) AND YEAR(timestamp) = YEAR(NOW())";
-} elseif ($filter_type == 'average') {
-    $query = "SELECT ROUND(AVG(value), 2) AS average_value FROM $table";
-    $result = mysqli_query($conn, $query);
-    $row = mysqli_fetch_assoc($result);
-    $average_value = $row['average_value'];
-    echo "<p>Average Value: $average_value</p>";
-    exit();
-} elseif ($filter_type == 'entire') {
-    $query = "SELECT * FROM $table";
-}
+?>
 
+<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="service-item text-center pt-3">
+        <div class="p-4">
+            <a href="?filter_type=today">
+                <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                <h5 class="mb-3">Skilled Instructors</h5>
+                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+    <div class="service-item text-center pt-3">
+        <div class="p-4">
+            <a href="?filter_type=1hour">
+                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                <h5 class="mb-3">Online Classes</h5>
+                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+    <div class="service-item text-center pt-3">
+        <div class="p-4">
+            <a href="?filter_type=week">
+                <i class="fa fa-3x fa-home text-primary mb-4"></i>
+                <h5 class="mb-3">Home Projects</h5>
+                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+    <div class="service-item text-center pt-3">
+        <div class="p-4">
+            <a href="?filter_type=average">
+                <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                <h5 class="mb-3">Book Library</h5>
+                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<?php
 $result = mysqli_query($conn, $query);
 
 // Prepara i dati per il grafico

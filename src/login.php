@@ -1,6 +1,6 @@
 <?php
 // Include il file database.php che contiene le informazioni di connessione al database
-require_once('db/database.php');
+require_once('db/db_conn.php');
 
 // Avvia la sessione
 session_start();
