@@ -28,54 +28,28 @@ elseif (isset($_GET['idselector']) && $_GET['idselector'] === '5') {
     exit();
 }
 
-?>
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Recupera il valore della variabile "today"
+    $today = $_POST['value'];
+}
+// Crea la query SQL in base al tipo di filtro e alla tabella del database
+if ($filter_type == 'today') {
+    $query = "SELECT * FROM $table WHERE DATE(timestamp) = CURDATE()";
+} elseif ($filter_type == '1hour') {
+    $query = "SELECT * FROM $table WHERE timestamp >= DATE_SUB(NOW(), INTERVAL 1 HOUR)";
+} elseif ($filter_type == 'week') {
+    $query = "SELECT * FROM $table WHERE WEEK(timestamp) = WEEK(NOW()) AND YEAR(timestamp) = YEAR(NOW())";
+} elseif ($filter_type == 'average') {
+    $query = "SELECT ROUND(AVG(value), 2) AS average_value FROM $table";
+    $result = mysqli_query($conn, $query);
+    $row = mysqli_fetch_assoc($result);
+    $average_value = $row['average_value'];
+    echo "<p>Average Value: $average_value</p>";
+    exit();
+} elseif ($filter_type == 'entire') {
+    $query = "SELECT * FROM $table";
+}
 
-<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="service-item text-center pt-3">
-        <div class="p-4">
-            <a href="?filter_type=today">
-                <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
-                <h5 class="mb-3">Skilled Instructors</h5>
-                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-            </a>
-        </div>
-    </div>
-</div>
-<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-    <div class="service-item text-center pt-3">
-        <div class="p-4">
-            <a href="?filter_type=1hour">
-                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
-                <h5 class="mb-3">Online Classes</h5>
-                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-            </a>
-        </div>
-    </div>
-</div>
-<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-    <div class="service-item text-center pt-3">
-        <div class="p-4">
-            <a href="?filter_type=week">
-                <i class="fa fa-3x fa-home text-primary mb-4"></i>
-                <h5 class="mb-3">Home Projects</h5>
-                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-            </a>
-        </div>
-    </div>
-</div>
-<div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-    <div class="service-item text-center pt-3">
-        <div class="p-4">
-            <a href="?filter_type=average">
-                <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
-                <h5 class="mb-3">Book Library</h5>
-                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
-            </a>
-        </div>
-    </div>
-</div>
-
-<?php
 $result = mysqli_query($conn, $query);
 
 // Prepara i dati per il grafico
@@ -95,6 +69,7 @@ $chart_data = [
     'mode' => 'lines+markers',
     'name' => ucfirst($table) // Utilizza il nome della tabella come nome del grafico
 ];
+
 ?>
 
 <!DOCTYPE html>
@@ -103,22 +78,91 @@ $chart_data = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualization</title>
-    <link rel="stylesheet" href="css/stylesgraphic.css">
 </head>
 <body>
-    <div class="container">
-        <div class="menu">
-            <form action="" method="post">
-                <select name="filter_type">
-                    <option value="today">Today</option>
-                    <option value="1hour">Last Hour</option>
-                    <option value="week">Entire Week</option>
-                    <option value="entire">Entire Values</option>
-                    <option value="average">Average Value</option>
-                </select>
-                <input type="submit" value="Filter">
-            </form>
+   <!-- Service Start -->
+   <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-lg-2 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <form method="post">
+                        <input type="hidden" name="filter_type" value="today">
+                        <input type="hidden" name="value" value="today">
+                        <button type="submit" class="service-item text-center pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                                <h5 class="mb-3">Today</h5>
+                                <p>Filter</p>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="col-lg-2 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <form method="post">
+                        <input type="hidden" name="filter_type" value="1houre">
+                        <input type="hidden" name="value" value="1houre">
+                        <button type="submit" class="service-item text-center pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                                <h5 class="mb-3">Houre</h5>
+                                <p>Filter</p>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="col-lg-2 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <form method="post">
+                        <input type="hidden" name="filter_type" value="week">
+                        <input type="hidden" name="value" value="week">
+                        <button type="submit" class="service-item text-center pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                                <h5 class="mb-3">Week</h5>
+                                <p>Filter</p>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="col-lg-2 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <form method="post">
+                        <input type="hidden" name="filter_type" value="entire">
+                        <input type="hidden" name="value" value="entire">
+                        <button type="submit" class="service-item text-center pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                                <h5 class="mb-3">Entire</h5>
+                                <p>Filter</p>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="col-lg-2 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <form method="post">
+                        <input type="hidden" name="filter_type" value="average">
+                        <input type="hidden" name="value" value="average">
+                        <button type="submit" class="service-item text-center pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                                <h5 class="mb-3">Average</h5>
+                                <p>Filter</p>
+                            </div>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
         </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Service End -->
+    <div class="container">
+        
         <div id="chart"></div>
     </div>
 
