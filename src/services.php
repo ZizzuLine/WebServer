@@ -188,9 +188,6 @@ $field_to_table_mapping = array(
     'field3' => 'speed',
     'field4' => 'fuel',
     'field5' => '',
-    'field6' => '',
-    'field7' => '',
-    'field8' => '',
 );
 
 

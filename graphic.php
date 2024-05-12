@@ -101,8 +101,8 @@ $chart_data = [
 
                 <div class="col-lg-2 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
                     <form method="post">
-                        <input type="hidden" name="filter_type" value="1houre">
-                        <input type="hidden" name="value" value="1houre">
+                        <input type="hidden" name="filter_type" value="1hour">
+                        <input type="hidden" name="value" value="1hour">
                         <button type="submit" class="service-item text-center pt-3">
                             <div class="p-4">
                                 <i class="fa fa-3x fa-globe text-primary mb-4"></i>
