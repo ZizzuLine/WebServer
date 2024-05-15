@@ -165,7 +165,7 @@
                                 <img class="img-fluid" src="img/percorso.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                     <h5 class="m-0">Percorso</h5>
-                                    <small class="text-primary">49 Courses</small>
+                                    <small class="text-primary"></small>
                                 </div>
                             </a>
                         </div>
@@ -174,7 +174,7 @@
                                 <img class="img-fluid" src="img/temperatura.avif" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                     <h5 class="m-0">Temperatura</h5>
-                                    <small class="text-primary">49 Courses</small>
+                                    <small class="text-primary"></small>
                                 </div>
                             </a>
                         </div>
@@ -183,7 +183,7 @@
                                 <img class="img-fluid" src="img/umidita.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                     <h5 class="m-0">Umidità</h5>
-                                    <small class="text-primary">49 Courses</small>
+                                    <small class="text-primary"></small>
                                 </div>
                             </a>
                         </div>
@@ -194,7 +194,7 @@
                         <img class="img-fluid position-absolute w-100 h-100" src="img/carburante.jpg" alt="" style="object-fit: cover;">
                         <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
                             <h5 class="m-0">Carburante</h5>
-                            <small class="text-primary">49 Courses</small>
+                            <small class="text-primary"></small>
                         </div>
                     </a>
                 </div>
@@ -203,7 +203,7 @@
                         <img class="img-fluid" src="img/cat-public.jpg"  width="100%">
                         <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                             <h5 class="m-0">Velocità</h5>
-                            <small class="text-primary">49 Courses</small>
+                            <small class="text-primary"></small>
                         </div>
                     </a>
                 </div>
