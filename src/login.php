@@ -32,6 +32,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($hashed_password === $stored_password) {
             // Password corretta, esegui il login
             echo "Login riuscito!";
+            $_SESSION['username'] = $username;
+            header("Location: dashboard.php"); // Reindirizza alla dashboard dopo il login
+            exit;
         } else {
             // Password non corretta
             echo "Password errata.";
