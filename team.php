@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>eLEARNING - eLearning HTML Template</title>
+    <title>ZizzuLine</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -44,7 +44,7 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="index.php" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>eLEARNING</h2>
+            <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>ZizzuLine</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -52,19 +52,9 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.php" class="nav-item nav-link">Home</a>
-                <a href="index.php #servizi" class="nav-item nav-link">Services</a>
-                <a href="courses.php" class="nav-item nav-link">Courses</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu fade-down m-0">
-                        <a href="team.php" class="dropdown-item active">Our Team</a>
-                        <a href="testimonial.php" class="dropdown-item">Testimonial</a>
-                        <a href="404.php" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.php" class="nav-item nav-link">Contact</a>
+                <a href="index.php #servizi" class="nav-item nav-link">Services</a>                
             </div>
-            <a href="src/login.php" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Accedi<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="index.php" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Accedi<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -76,13 +66,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
                     <h1 class="display-3 text-white animated slideInDown">Our Team</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Team</li>
-                        </ol>
-                    </nav>
+                    
                 </div>
             </div>
         </div>
@@ -95,39 +79,39 @@
         <div class="container text-center">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Instructors</h6>
-                <h1 class="mb-5">Expert Instructors</h1>
+                <h1 class="mb-5">Team Composed by</h1>
             </div>
-            <div class="row g-3">
+            <div class="row justify-content-center g-3">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            <img class="img-fluid" src="img/oldimg/achraf.jpg" alt="">
                         </div>
                         <div class="text-center p-4">
                             <h5 class="mb-0">Erriyahi Achraf</h5>
-                            <small>Designation</small>
+                            <small>Designer</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            <img class="img-fluid" src="img/oldimg/kevin.jpg" alt="">
                         </div>
                         <div class="text-center p-4">
                             <h5 class="mb-0">Heinrich Kevin</h5>
-                            <small>Designation</small>
+                            <small>Backend</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item bg-light">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            <img class="img-fluid" src="img/oldimg/fulvio.jpg" alt="">
                         </div>
                         <div class="text-center p-4">
                             <h5 class="mb-0">Sappia Fulvio</h5>
-                            <small>Designation</small>
+                            <small>Session</small>
                         </div>
                     </div>
                 </div>
@@ -138,7 +122,37 @@
         
 
     <!-- Footer Start -->
-    <?php include('src/footer.php');?>
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg col-md-6">
+                <h4 class="text-white mb-3">Quick Link</h4>
+                <a class="btn btn-link" href="#">About Us</a>
+                <a class="btn btn-link" href="#">Contact Us</a>
+                <a class="btn btn-link" href="#">Privacy Policy</a>
+                <a class="btn btn-link" href="#">Terms & Condition</a>
+                <a class="btn btn-link" href="#">FAQs & Help</a>
+            </div>
+            <div class="col-lg col-md-6">
+                <h4 class="text-white mb-3">Contact</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> via Santa Lucia 31, 18100 Imperia, Italia</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i> 0183295958</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i> imis002001@istruzione.it</p>
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">ZizzuLine</a>, All Right Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <!-- Footer End -->
 
 
