@@ -7,7 +7,24 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-
+    <style>
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+        .video-container video {
+            width: 100%;
+            height: auto;
+        }
+        .mute-button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,7 +82,13 @@
     <div class="container-fluid p-0 mb-5">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
-                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+
+                <div class="video-container">
+                    <video id="carouselVideo" muted autoplay loop>
+                        <source src="video/mercedes_bus_trim.mp4" type="video/mp4">
+                    </video>  
+                </div>
+
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
                     <div class="container">
                         <div class="row justify-content-start">
@@ -82,8 +105,7 @@
         </div>
     </div>
     <!-- Carousel End -->
-
-
+    
 
 
     <!-- About Start -->
