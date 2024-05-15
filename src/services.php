@@ -154,13 +154,7 @@ if (isset($_GET['id_argument'])) {
             <h6 class="section-title bg-white text-center text-primary px-3">Visualization of:</h6>
             <h1 class="mb-5">Fuel</h1>
         </div>';
-    } elseif ($id_argument === '5') {
-        echo '
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title bg-white text-center text-primary px-3">Visualization of:</h6>
-            <h1 class="mb-5">Route</h1>
-        </div>';
-    } else {
+    }  else {
         echo '
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
             <h6 class="section-title bg-white text-center text-primary px-3">Visualization of:</h6>
@@ -187,7 +181,6 @@ $field_to_table_mapping = array(
     'field2' => 'humidity',
     'field3' => 'speed',
     'field4' => 'fuel',
-    'field5' => '',
 );
 
 
@@ -242,11 +235,6 @@ include '../graphic.php';
     </div>
 </div>
 <!-- About End -->
-
-
-
-    
-        
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -344,10 +332,6 @@ include '../graphic.php';
 
     <!-- Template Javascript -->
     <script src="../js/main.js"></script>
-
-
-
-
 
 </body>
 
