@@ -52,7 +52,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="index.php" class="nav-item nav-link">Home</a>
-                <a href="index.php #servizi" class="nav-item nav-link">Services</a>                
+                <a href="index.php #servizi" class="nav-item nav-link">Services</a>
             </div>
             <a href="index.php" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Accedi<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
@@ -66,7 +66,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
                     <h1 class="display-3 text-white animated slideInDown">Our Team</h1>
-                    
+
                 </div>
             </div>
         </div>
@@ -119,26 +119,28 @@
         </div>
     </div>
     <!-- Team End -->
-        
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+
+   <!-- Footer Start -->
+   <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-lg col-md-6">
                 <h4 class="text-white mb-3">Quick Link</h4>
-                <a class="btn btn-link" href="#">About Us</a>
-                <a class="btn btn-link" href="#">Contact Us</a>
-                <a class="btn btn-link" href="#">Privacy Policy</a>
-                <a class="btn btn-link" href="#">Terms & Condition</a>
-                <a class="btn btn-link" href="#">FAQs & Help</a>
+                <a class="btn btn-link" href="index.php">Home</a>
+                <a class="btn btn-link" href="index.php #about">About Us</a>
+                <a class="btn btn-link" href="team.php">Team</a>
             </div>
             <div class="col-lg col-md-6">
                 <h4 class="text-white mb-3">Contact</h4>
                 <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i> via Santa Lucia 31, 18100 Imperia, Italia</p>
                 <p class="mb-2"><i class="fa fa-phone-alt me-3"></i> 0183295958</p>
                 <p class="mb-2"><i class="fa fa-envelope me-3"></i> imis002001@istruzione.it</p>
-                
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" target=”_blank href="https://www.instagram.com/polotecnologicoimperiese/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social" target=”_blank href="https://www.facebook.com/polotecnologicoimperiese"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" target=”_blank href="https://telegram.me/ptifamiglie"><i class="fab fa-telegram"></i></a>
+                </div>
             </div>
 
         </div>
@@ -153,6 +155,7 @@
         </div>
     </div>
 </div>
+
     <!-- Footer End -->
 
 

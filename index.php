@@ -109,7 +109,7 @@
 
 
     <!-- About Start -->
-    <div  class="container-xxl py-5">
+    <div id="about" class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
@@ -213,8 +213,6 @@
     <!-- Categories Start -->
 
 
-    <
-
 
 
     <!-- Testimonial Start -->
@@ -256,11 +254,9 @@
         <div class="row g-5">
             <div class="col-lg col-md-6">
                 <h4 class="text-white mb-3">Quick Link</h4>
-                <a class="btn btn-link" href="#">About Us</a>
-                <a class="btn btn-link" href="#">Contact Us</a>
-                <a class="btn btn-link" href="#">Privacy Policy</a>
-                <a class="btn btn-link" href="#">Terms & Condition</a>
-                <a class="btn btn-link" href="#">FAQs & Help</a>
+                <a class="btn btn-link" href="index.php">Home</a>
+                <a class="btn btn-link" href="#about">About Us</a>
+                <a class="btn btn-link" href="team.php">Team</a>
             </div>
             <div class="col-lg col-md-6">
                 <h4 class="text-white mb-3">Contact</h4>
