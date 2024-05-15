@@ -96,7 +96,7 @@
                                 <h5 class="text-primary text-uppercase mb-3 animated slideInDown">ZizzuLine</h5>
                                 <h1 class="display-3 text-white animated slideInDown">Servizio Di Trasporto Pubblico</h1>
                                 <a href="#servizi" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Servizi</a>
-                                <a href="src/login.php" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Accedi</a>
+                                <a href="src/login.html" class="btn btn-light py-md-3 px-md-5 animated slideInRight">Accedi</a>
                             </div>
                         </div>
                     </div>
