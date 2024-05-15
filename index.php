@@ -119,30 +119,31 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
-                    <h1 class="mb-4">Welcome to eLEARNING</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <h1 class="mb-4">Welcome to ZizzuLine</h1>
+                    <p class="mb-4">Zizzuline, una soluzione all'avanguardia per la gestione efficiente dei dati delle fermate dei bus, offre monitoraggio in tempo reale, analisi approfondite e decisioni informate per ottimizzare il trasporto pubblico. Con la sua piattaforma user-friendly, trasforma l'esperienza di viaggio, coinvolgendo operatori e appassionati nella missione di migliorare la mobilità urbana. Unisciti a noi per plasmare il futuro dei trasporti su Zizzuline.
+                    </p>
+                    <p class="mb-4"></p>
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Intuitiva interfaccia utente</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Analisi dei dati in tempo reale</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certificate</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Ottimizzazione del servizio di trasporto</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Monitoraggio delle prestazioni</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Classes</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Identificazione delle aree di miglioramento</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>International Certificate</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Decisini informate basate sui dati</p>
                         </div>
                     </div>
-                    <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+
                 </div>
             </div>
         </div>
