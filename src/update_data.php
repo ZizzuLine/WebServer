@@ -27,7 +27,7 @@ function updateDatabaseFromThingSpeak($channel_id, $api_key, $field_to_table_map
                 //echo "<p>$field: $value</p>";
 
                 // Verifica la variazione e invia al database solo se è presente una variazione
-                $conn = mysqli_connect("localhost", "root", "", "zizzuline");
+                $conn = mysqli_connect("localhost", "root", "", "my_flybaytv");
                 if (!$conn) {
                     //echo "Connection failed!";
                 } else {
