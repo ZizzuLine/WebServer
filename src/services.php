@@ -119,17 +119,10 @@ $conn->close();
                 <a href="index.php" class="nav-item nav-link">Home</a>
                 <a href="../index.php#servizi" class="nav-item nav-link active">Servizi</a>
                 <a href="courses.php" class="nav-item nav-link">Courses</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu fade-down m-0">
-                        <a href="team.php" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.php" class="dropdown-item">Testimonial</a>
-                        <a href="404.php" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
+                
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="../index.php" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -140,7 +133,6 @@ $conn->close();
         <div class="video-container">
             <video id="carouselVideo" muted autoplay loop>
                 <source src="../video/mercedes_bus_trim.mp4" type="video/mp4">
-                Your browser does not support the video tag.
             </video>
         </div>
         <div class="container py-5 content">
@@ -253,8 +245,8 @@ include '../graphic.php';
                 </div>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
-                <h1 class="mb-4">Welcome to eLEARNING</h1>
+                <h6 class="section-title bg-white text-start text-primary pe-3">Details</h6>
+                <h1 class="mb-4">Welcome to ZizzuLine</h1>
                 <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
                 <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
                 <div class="row gy-2 gx-4 mb-4">
