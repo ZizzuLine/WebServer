@@ -86,7 +86,7 @@
                 <div class="video-container">
                     <video id="carouselVideo" muted autoplay loop>
                         <source src="video/mercedes_bus_trim.mp4" type="video/mp4">
-                    </video>  
+                    </video>
                 </div>
 
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(24, 29, 56, .7);">
@@ -105,7 +105,7 @@
         </div>
     </div>
     <!-- Carousel End -->
-    
+
 
 
     <!-- About Start -->
@@ -162,7 +162,7 @@
                     <div class="row g-3">
                         <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
                             <a class="position-relative d-block overflow-hidden" href="percorso.php">
-                                <img class="img-fluid" src="img/cat-1.jpg" alt="">
+                                <img class="img-fluid" src="img/percorso.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                     <h5 class="m-0">Percorso</h5>
                                     <small class="text-primary">49 Courses</small>
@@ -226,21 +226,18 @@
             </div>
             <div class="owl-carousel testimonial-carousel position-relative">
                 <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
                     <h5 class="mb-0">Stile Moderno e Dinamico</h5>
                     <div class="testimonial-text bg-light text-center p-4">
                     <p class="mb-0">Il nostro sito si distingue per uno stile moderno e animazioni fluide, offrendo un'esperienza visiva coinvolgente e senza sforzo.</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
                     <h5 class="mb-0">Comunicazione Affidabile Backend</h5>
                     <div class="testimonial-text bg-light text-center p-4">
                     <p class="mb-0">La nostra comunicazione backend server-to-server garantisce tempi di caricamento rapidi e prestazioni costanti, indipendentemente dal carico del sito.</p>
                     </div>
                 </div>
                 <div class="testimonial-item text-center">
-                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
                     <h5 class="mb-0">Analisi Dati Intuitive</h5>
                     <div class="testimonial-text bg-light text-center p-4">
                     <p class="mb-0">Grazie ai grafici interattivi, esplorare i dati diventa facile e coinvolgente, permettendo di scoprire informazioni dettagliate con semplicità.</p>
