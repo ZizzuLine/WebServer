@@ -171,7 +171,7 @@
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
                             <a class="position-relative d-block overflow-hidden" href="src/services.php?id_argument=1">
-                                <img class="img-fluid" src="img/cat-2.jpg" alt="">
+                                <img class="img-fluid" src="img/temperatura.avif" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                     <h5 class="m-0">Temperatura</h5>
                                     <small class="text-primary">49 Courses</small>
@@ -180,7 +180,7 @@
                         </div>
                         <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
                             <a class="position-relative d-block overflow-hidden" href="src/services.php?id_argument=2">
-                                <img class="img-fluid" src="img/cat-3.jpg" alt="">
+                                <img class="img-fluid" src="img/umidita.jpg" alt="">
                                 <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                     <h5 class="m-0">Umidità</h5>
                                     <small class="text-primary">49 Courses</small>
@@ -191,7 +191,7 @@
                 </div>
                 <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
                     <a class="position-relative d-block h-100 overflow-hidden" href="src/services.php?id_argument=4">
-                        <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="" style="object-fit: cover;">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/carburante.jpg" alt="" style="object-fit: cover;">
                         <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
                             <h5 class="m-0">Carburante</h5>
                             <small class="text-primary">49 Courses</small>
