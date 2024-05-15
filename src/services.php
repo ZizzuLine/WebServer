@@ -41,7 +41,38 @@ $conn->close();
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-
+    <style>
+        .container-fluid {
+            position: relative;
+            overflow: hidden;
+        }
+        .video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+        .mute-button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+        }
+    </style>
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -105,24 +136,41 @@ $conn->close();
 
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary py-5 mb-5 page-header">
-        <div class="container py-5">
+    <div class="container-fluid bg-primary py-5 mb-5">
+        <div class="video-container">
+            <video id="carouselVideo" muted autoplay loop>
+                <source src="../video/mercedes_bus_trim.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="container py-5 content">
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
-                    <h1 class="display-3 text-white animated slideInDown">About Us</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">About</li>
-                        </ol>
-                    </nav>
+                    <h1 class="display-3 text-white animated slideInDown">Service</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-10 text-center">
+                    <button id="muteButton" class="mute-button">Unmute</button>
                 </div>
             </div>
         </div>
     </div>
     <!-- Header End -->
+    <script>
+        const video = document.getElementById('carouselVideo');
+        const muteButton = document.getElementById('muteButton');
 
+        muteButton.addEventListener('click', () => {
+            if (video.muted) {
+                video.muted = false;
+                muteButton.textContent = 'Mute';
+            } else {
+                video.muted = true;
+                muteButton.textContent = 'Unmute';
+            }
+        });
+    </script>
 
     <?php
 
