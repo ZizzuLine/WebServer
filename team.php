@@ -66,7 +66,6 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
                     <h1 class="display-3 text-white animated slideInDown">Our Team</h1>
-
                 </div>
             </div>
         </div>
