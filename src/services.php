@@ -83,7 +83,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.php" class="nav-item nav-link">Home</a>
+                <a href="../index.php" class="nav-item nav-link">Home</a>
                 <a href="../index.php#servizi" class="nav-item nav-link active">Servizi</a>
             </div>
             <a href="../index.php" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
